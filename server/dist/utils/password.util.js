@@ -4,13 +4,13 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.comparePassword = exports.hashPassword = void 0;
-const bcrypt_1 = __importDefault(require("bcrypt"));
+const bcryptjs_1 = __importDefault(require("bcryptjs"));
 const SALT_ROUNDS = 12;
 const hashPassword = async (plainText) => {
-    return bcrypt_1.default.hash(plainText, SALT_ROUNDS);
+    return bcryptjs_1.default.hash(plainText, SALT_ROUNDS);
 };
 exports.hashPassword = hashPassword;
 const comparePassword = async (plainText, hashedPassword) => {
-    return bcrypt_1.default.compare(plainText, hashedPassword);
+    return bcryptjs_1.default.compare(plainText, hashedPassword);
 };
 exports.comparePassword = comparePassword;
