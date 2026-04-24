@@ -351,7 +351,14 @@ function setupCreatePlanForm() {
         window.location.href = `/pages/plan-detail.html?id=${result.id}`;
       }, 1000);
     } catch (error) {
-      showMessage('Error creating plan: ' + error.message, 'error');
+      console.error('Create plan error:', error);
+      // Show validation details if available
+      if (error.details && Array.isArray(error.details)) {
+        const details = error.details.join(', ');
+        showMessage(`Validation failed: ${details}`, 'error');
+      } else {
+        showMessage('Error creating plan: ' + error.message, 'error');
+      }
     }
   });
 }
