@@ -1,7 +1,7 @@
 // Use current host dynamically to support both localhost and 127.0.0.1
-const protocol = window.location.protocol === 'file:' ? 'http:' : window.location.protocol;
-const hostname = window.location.hostname || 'localhost';
-const API_BASE = `${protocol}//${hostname}:5174/api`;
+const API_BASE = "https://study-plan-hub.onrender.com/api";
+
+
 
 class ApiClient {
   constructor() {
@@ -18,22 +18,31 @@ class ApiClient {
 
   async request(endpoint, options = {}) {
     const url = `${API_BASE}${endpoint}`;
-    const response = await fetch(url, {
-      ...options,
-      headers: this.getHeaders(),
-    });
+    console.log('Making request to:', url); // Debug log
 
-    if (response.status === 401 && this.refreshToken) {
-      await this.refreshAccessToken();
-      return this.request(endpoint, options);
+    try {
+      const response = await fetch(url, {
+        ...options,
+        headers: this.getHeaders(),
+      });
+
+      console.log('Response status:', response.status); // Debug log
+
+      if (response.status === 401 && this.refreshToken) {
+        await this.refreshAccessToken();
+        return this.request(endpoint, options);
+      }
+
+      const data = await response.json();
+      if (!response.ok) {
+        throw new Error(data.message || 'API request failed');
+      }
+
+      return data.data;
+    } catch (error) {
+      console.error('API request failed:', error); // Debug log
+      throw error;
     }
-
-    const data = await response.json();
-    if (!response.ok) {
-      throw new Error(data.message || 'API request failed');
-    }
-
-    return data.data;
   }
 
   async refreshAccessToken() {
