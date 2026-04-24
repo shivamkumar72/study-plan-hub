@@ -16,9 +16,9 @@ dotenv.config();
 
 const app = express();
 
-// ✅ SINGLE CLEAN CORS CONFIG
+// ✅ TEMPORARILY ALLOW ALL ORIGINS FOR DEBUGGING
 app.use(cors({
-  origin: process.env.CLIENT_URL,
+  origin: true, // Allow all origins
   credentials: true
 }));
 
