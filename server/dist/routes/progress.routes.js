@@ -10,3 +10,4 @@ const router = express_1.default.Router();
 router.get('/:planId', auth_middleware_1.authenticate, plan_controller_1.getPlanProgress);
 router.post('/:planId', auth_middleware_1.authenticate, plan_controller_1.updateProgress);
 exports.default = router;
+//# sourceMappingURL=progress.routes.js.map

@@ -45,3 +45,4 @@ const getProfile = async (req, res, next) => {
     }
 };
 exports.getProfile = getProfile;
+//# sourceMappingURL=user.controller.js.map

@@ -24,3 +24,4 @@ const calculateAverageRating = async (planId) => {
     return Number(result.rows[0]?.average_rating || 0);
 };
 exports.calculateAverageRating = calculateAverageRating;
+//# sourceMappingURL=rating.model.js.map

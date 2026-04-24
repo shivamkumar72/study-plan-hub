@@ -162,3 +162,4 @@ const ratePlan = async (userId, planId, rating) => {
     return { planId, rating, averageRating };
 };
 exports.ratePlan = ratePlan;
+//# sourceMappingURL=plan.service.js.map

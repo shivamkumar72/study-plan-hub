@@ -9,3 +9,4 @@ const user_controller_1 = require("../controllers/user.controller");
 const router = express_1.default.Router();
 router.get('/me', auth_middleware_1.authenticate, user_controller_1.getProfile);
 exports.default = router;
+//# sourceMappingURL=user.routes.js.map

@@ -52,3 +52,4 @@ const getUserProfile = async (userId) => {
     };
 };
 exports.getUserProfile = getUserProfile;
+//# sourceMappingURL=user.service.js.map

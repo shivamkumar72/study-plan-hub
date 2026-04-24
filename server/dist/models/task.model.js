@@ -37,3 +37,4 @@ const countPlanTasks = async (planId) => {
     return Number(result.rows[0]?.count || 0);
 };
 exports.countPlanTasks = countPlanTasks;
+//# sourceMappingURL=task.model.js.map

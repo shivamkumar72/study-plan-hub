@@ -13,3 +13,4 @@ router.post('/login', (0, validation_middleware_1.validateBody)(validationSchema
 router.post('/refresh', (0, validation_middleware_1.validateBody)(validationSchemas_1.refreshTokenSchema), auth_controller_1.refreshToken);
 router.post('/logout', (0, validation_middleware_1.validateBody)(validationSchemas_1.refreshTokenSchema), auth_controller_1.logout);
 exports.default = router;
+//# sourceMappingURL=auth.routes.js.map

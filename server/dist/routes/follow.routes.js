@@ -10,3 +10,4 @@ const router = express_1.default.Router();
 router.post('/:planId', auth_middleware_1.authenticate, plan_controller_1.followPlan);
 router.delete('/:planId', auth_middleware_1.authenticate, plan_controller_1.unfollowPlan);
 exports.default = router;
+//# sourceMappingURL=follow.routes.js.map

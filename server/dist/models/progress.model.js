@@ -34,3 +34,4 @@ const countCompletedTasks = async (userId, planId) => {
     return Number(result.rows[0]?.count || 0);
 };
 exports.countCompletedTasks = countCompletedTasks;
+//# sourceMappingURL=progress.model.js.map

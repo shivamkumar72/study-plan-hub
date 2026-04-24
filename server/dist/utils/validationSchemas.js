@@ -42,3 +42,4 @@ exports.progressSchema = joi_1.default.object({
 exports.ratingSchema = joi_1.default.object({
     rating: joi_1.default.number().integer().min(1).max(5).required(),
 });
+//# sourceMappingURL=validationSchemas.js.map

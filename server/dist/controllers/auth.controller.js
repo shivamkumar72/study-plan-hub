@@ -85,3 +85,4 @@ const profile = async (req, res, next) => {
     }
 };
 exports.profile = profile;
+//# sourceMappingURL=auth.controller.js.map

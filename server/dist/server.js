@@ -8,3 +8,4 @@ const port = Number(process.env.PORT) || 5174;
 app_1.default.listen(port, () => {
     console.log(`Server running on http://localhost:${port}`);
 });
+//# sourceMappingURL=server.js.map

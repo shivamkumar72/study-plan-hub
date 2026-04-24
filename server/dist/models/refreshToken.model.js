@@ -20,3 +20,4 @@ const revokeRefreshToken = async (token) => {
     await db_1.default.query('DELETE FROM refresh_tokens WHERE token = $1', [token]);
 };
 exports.revokeRefreshToken = revokeRefreshToken;
+//# sourceMappingURL=refreshToken.model.js.map

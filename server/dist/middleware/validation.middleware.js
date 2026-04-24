@@ -19,3 +19,4 @@ const validateBody = (schema) => {
     };
 };
 exports.validateBody = validateBody;
+//# sourceMappingURL=validation.middleware.js.map

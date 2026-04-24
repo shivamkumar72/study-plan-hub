@@ -9,3 +9,4 @@ const plan_controller_1 = require("../controllers/plan.controller");
 const router = express_1.default.Router();
 router.post('/:planId', auth_middleware_1.authenticate, plan_controller_1.ratePlan);
 exports.default = router;
+//# sourceMappingURL=rating.routes.js.map

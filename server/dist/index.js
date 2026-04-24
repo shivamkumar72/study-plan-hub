@@ -33,3 +33,4 @@ app.use(error_middleware_1.errorHandler);
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
+//# sourceMappingURL=index.js.map

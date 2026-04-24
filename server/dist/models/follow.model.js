@@ -25,3 +25,4 @@ const getFollowerCount = async (planId) => {
     return Number(result.rows[0]?.count || 0);
 };
 exports.getFollowerCount = getFollowerCount;
+//# sourceMappingURL=follow.model.js.map

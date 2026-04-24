@@ -160,3 +160,4 @@ const ratePlan = async (req, res, next) => {
     }
 };
 exports.ratePlan = ratePlan;
+//# sourceMappingURL=plan.controller.js.map

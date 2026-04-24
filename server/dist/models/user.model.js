@@ -35,3 +35,4 @@ const getUserFollowedPlans = async (userId) => {
     return result.rows;
 };
 exports.getUserFollowedPlans = getUserFollowedPlans;
+//# sourceMappingURL=user.model.js.map

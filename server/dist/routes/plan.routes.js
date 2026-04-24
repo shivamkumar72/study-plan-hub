@@ -21,3 +21,4 @@ router.get('/:planId/progress', auth_middleware_1.authenticate, plan_controller_
 router.post('/:planId/progress', auth_middleware_1.authenticate, (0, validation_middleware_1.validateBody)(validationSchemas_1.progressSchema), plan_controller_1.updateProgress);
 router.post('/:planId/rating', auth_middleware_1.authenticate, (0, validation_middleware_1.validateBody)(validationSchemas_1.ratingSchema), plan_controller_1.ratePlan);
 exports.default = router;
+//# sourceMappingURL=plan.routes.js.map

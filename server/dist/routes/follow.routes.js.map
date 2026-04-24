@@ -1,0 +1,1 @@
+{"version":3,"file":"follow.routes.js","sourceRoot":"","sources":["../../src/routes/follow.routes.ts"],"names":[],"mappings":";;;;;AAAA,sDAA8B;AAC9B,mEAA6D;AAC7D,oEAA0E;AAE1E,MAAM,MAAM,GAAG,iBAAO,CAAC,MAAM,EAAE,CAAC;AAEhC,MAAM,CAAC,IAAI,CAAC,UAAU,EAAE,8BAAY,EAAE,4BAAU,CAAC,CAAC;AAClD,MAAM,CAAC,MAAM,CAAC,UAAU,EAAE,8BAAY,EAAE,8BAAY,CAAC,CAAC;AAEtD,kBAAe,MAAM,CAAC"}

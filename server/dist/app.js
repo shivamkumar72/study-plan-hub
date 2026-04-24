@@ -34,3 +34,4 @@ app.use((req, res) => {
 });
 app.use(error_middleware_1.errorHandler);
 exports.default = app;
+//# sourceMappingURL=app.js.map

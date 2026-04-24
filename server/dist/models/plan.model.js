@@ -107,3 +107,4 @@ const updateAverageRating = async (planId, averageRating) => {
     await db_1.default.query('UPDATE study_plans SET average_rating = $1 WHERE id = $2', [averageRating, planId]);
 };
 exports.updateAverageRating = updateAverageRating;
+//# sourceMappingURL=plan.model.js.map

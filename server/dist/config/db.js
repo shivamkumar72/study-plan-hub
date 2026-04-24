@@ -11,3 +11,4 @@ const pool = new pg_1.Pool({
     ssl: process.env.DATABASE_SSL === 'true' ? { rejectUnauthorized: false } : false,
 });
 exports.default = pool;
+//# sourceMappingURL=db.js.map

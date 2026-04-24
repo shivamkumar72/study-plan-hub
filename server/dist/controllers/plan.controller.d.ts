@@ -1,0 +1,12 @@
+import { Request, Response, NextFunction } from 'express';
+export declare const createPlan: (req: Request, res: Response, next: NextFunction) => Promise<void>;
+export declare const getPlans: (req: Request, res: Response, next: NextFunction) => Promise<void>;
+export declare const getPopularPlans: (req: Request, res: Response, next: NextFunction) => Promise<void>;
+export declare const getPlanById: (req: Request, res: Response, next: NextFunction) => Promise<void>;
+export declare const updatePlan: (req: Request, res: Response, next: NextFunction) => Promise<void>;
+export declare const deletePlan: (req: Request, res: Response, next: NextFunction) => Promise<void>;
+export declare const followPlan: (req: Request, res: Response, next: NextFunction) => Promise<void>;
+export declare const unfollowPlan: (req: Request, res: Response, next: NextFunction) => Promise<void>;
+export declare const getPlanProgress: (req: Request, res: Response, next: NextFunction) => Promise<void>;
+export declare const updateProgress: (req: Request, res: Response, next: NextFunction) => Promise<void>;
+export declare const ratePlan: (req: Request, res: Response, next: NextFunction) => Promise<void>;

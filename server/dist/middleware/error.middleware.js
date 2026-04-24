@@ -9,3 +9,4 @@ const errorHandler = (error, req, res, next) => {
     res.status(status).json({ success: false, message, details });
 };
 exports.errorHandler = errorHandler;
+//# sourceMappingURL=error.middleware.js.map
